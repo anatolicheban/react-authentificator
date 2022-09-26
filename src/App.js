@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import './App.sass'
+import { Authentificator, Autorisation, RequiresAuth } from './components'
+import { Route, Routes } from 'react-router'
+import Register from './components/Register'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='wrapper'>
+      <Routes>
+        <Route path='/' element={<RequiresAuth><Authentificator /></RequiresAuth>} />
+        <Route path='/login' element={<Autorisation />} />
+        <Route path='/register' element={<Register />} />
+      </Routes>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

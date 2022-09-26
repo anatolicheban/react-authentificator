@@ -1,0 +1,181 @@
+body
+  display: flex
+  align-items: center
+  width: 100vw
+  height: 100vh
+  background-image: url('https://wallpaperaccess.com/full/6319352.jpg')
+  background-size: cover
+  background-position: center
+
+.wrapper
+  padding: 0 15px
+  width: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+
+.auth
+  background-color: #fff
+  padding: 20px 30px
+  border-radius: 30px
+  max-width: 600px
+  width: 100%
+
+  &__items-box
+    height: 700px
+    margin-top: 10px
+  &__list
+    overflow: auto
+    height: 100%
+  &__title
+    text-align: center
+    margin-top: 20px
+  &__item
+    margin-right: 5px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 90px
+    margin-top: 20px
+    border-radius: 10px
+    background-color: rgba(#788CFF, .2)
+    padding: 0 15px
+    margin-bottom: 15px
+  &__item-service
+    font-size: 30px
+    font-weight: 600
+  &__item-key
+    font-weight: 400
+    font-size: 35px
+
+.login
+  background-color: #fff
+  padding: 20px 30px
+  border-radius: 30px
+  max-width: 600px
+  width: 100%
+  height: 700px
+  display: flex
+  flex-direction: column
+  align-items: center
+  &__title
+    text-align: center
+    margin-top: 20px
+  &__form
+    width: 100%
+    display: flex
+    align-items: center
+    flex-direction: column
+  &__name, &__password
+    display: block
+    border-radius: 10px
+    padding: 5px 5px
+    border: 1px solid #788CFF
+    width: 100%
+    font-size: 27px
+  label
+    font-size: 20px
+    width: 100%
+    text-align: left
+    margin: 30px 0 10px 20px
+  &__submit, .register-btn
+    width: 400px
+    border-radius: 10px
+    border: none
+    background-color: #2D82F0
+    margin-top: 50px
+    padding: 14px 0
+    font-size: 27px
+    color: #fff
+  .register-btn
+    width: 400px
+    background-color: #882EF0
+
+.register
+  background-color: #fff
+  padding: 20px 30px
+  border-radius: 30px
+  max-width: 600px
+  width: 100%
+  height: 700px
+  display: flex
+  flex-direction: column
+  align-items: center
+  &__title
+    text-align: center
+    margin-top: 20px
+  &__form
+    width: 100%
+    display: flex
+    align-items: center
+    flex-direction: column
+  &__name, &__password, &__email
+    display: block
+    border-radius: 10px
+    padding: 5px 5px
+    border: 1px solid #788CFF
+    width: 100%
+    font-size: 27px
+  label
+    font-size: 20px
+    width: 100%
+    text-align: left
+    margin: 30px 0 10px 20px
+  &__submit, .register-btn
+    width: 400px
+    border-radius: 10px
+    border: none
+    background-color: #2D82F0
+    margin-top: 50px
+    padding: 14px 0
+    font-size: 27px
+    color: #fff
+
+.back-to-login
+  margin-top: 20px
+  font-size: 24px
+  border: none
+  background-color: transparent
+  color: #882EF0
+  text-decoration: underline
+  &:hover
+    color: #2D82F0
+
+.invalid
+  background-color: rgba(#F46C49, .2)
+  border-color: #F23000
+
+.error-msg
+  padding: 10px 0
+  text-align: center
+  background-color: rgba(#F46C49, .2)
+  margin-top: 10px
+  width: 100%
+  color: #F20C00
+  font-size: 20px
+  border: 1px solid #F23000
+
+// .login, .register
+//   scrollbar-color: #6969dd #e0e0e0
+//   scrollbar-width: thin
+
+::-webkit-scrollbar
+  width: 12px
+
+/* Track */
+::-webkit-scrollbar-track
+  -webkit-border-radius: 10px
+  border-radius: 10px
+
+/* Handle */
+::-webkit-scrollbar-thumb
+  -webkit-border-radius: 10px
+  border-radius: 10px
+  background: rgba(0,0,0,0.2)
+
+::-webkit-scrollbar-thumb:window-inactive
+  // background: rgba(0,0,0.2)
+
+.loader
+  background-color: #fff
+  border-radius: 10px
